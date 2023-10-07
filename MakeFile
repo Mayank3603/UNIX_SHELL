@@ -1,0 +1,14 @@
+all: mkdir date cat rm ls shell
+
+date : date.c
+	gcc date.c -o date
+mkdir : mkdir.c
+	gcc mkdir.c -o mkdir
+rm : rm.c
+	gcc rm.c -o rm
+ls : ls.c
+	gcc ls.c -o ls
+cat : cat.c
+	gcc cat.c -o cat
+shell : shell_main.c
+	gcc shell_main.c -o shell
